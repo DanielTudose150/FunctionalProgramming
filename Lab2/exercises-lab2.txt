@@ -1,0 +1,38 @@
+Exercises:
+
+1. Remove all uppercase chars from a string. (ord, chr)
+2. Replace all lowercase chars with uppercase chars in a string.
+
+ghci> import Data.Char
+ghci> :t toUpper 
+toUpper :: Char -> Char
+ghci> toUpper 'a' 
+'A'
+
+3. Check if a list of numbers is sorted.
+isSorted :: [Int] -> Bool 
+
+4. Check if a given number is in a given list of numbers.
+is_in_list :: Int -> [Int] -> Bool
+
+5. Count occurences of a number in a given list of numbers.
+count_occ :: Int -> [Int] -> Int 
+
+6. Check if a two lists have the same elements.
+same_elements: [Int] -> [Int] -> Bool
+
+7. Check if a list is included in a another list (think of set inclusion). 
+is_included_in :: [Int] -> [Int] -> Bool 
+
+8. Check if two lists are permutations of the same list.
+[1,2,3] si [2,3,1] - sunt permutari ale aceleiasi liste.
+are_permutations :: [Int] -> [Int] -> Bool 
+
+9. Erathosthenes sieve
+ - elim_m :: Int -> [Int] -> [Int]
+ - sieve :: [Int] -> [Int]
+
+ variant: sieve :: Int -> [Int]
+
+10. Pascal's triangle
+pascal :: Int -> [Int]
