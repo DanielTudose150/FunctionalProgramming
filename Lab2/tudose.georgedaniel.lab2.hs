@@ -1,6 +1,7 @@
 import Data.Char
+import Data.List
 
-{-
+
 --Exercitiul 1
 
 remove_uppercase :: [Char] -> [Char]
@@ -33,7 +34,7 @@ isSorted (x:xs)
 
 
 
--Exercitiul 4
+--Exercitiul 4
 
 is_in_list :: Int -> [Int] -> Bool
 is_in_list x [] = False
@@ -103,14 +104,3 @@ sieve [] = []
 sieve [x] = [x]
 sieve (x:xs) = x:(sieve (xs\\(get_m x xs)))
 
-
-
-
-
-
-
-
-
-
-
--}

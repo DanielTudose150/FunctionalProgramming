@@ -69,3 +69,7 @@ sieve :: [Int] -> [Int]
 sieve [] = []
 sieve [x] = [x]
 sieve (x:xs) = x:(sieve (xs\\(get_m x xs)))
+
+sumlist :: [Int] -> Int
+sumlist [] = 0
+sumlist xs = (head xs) + sumlist (tail xs)
